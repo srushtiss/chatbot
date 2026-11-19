@@ -2,12 +2,11 @@ import os
 from openai import OpenAI
 
 api_key=os.getenv("GOOGLE_API_KEY")
-
-GEMINI_BASE_URL = "https://generativelanguage.googleapis.com/v1beta/openai/"
+url=os.getenv("GEMINI_BASE_URL")
 
 client=OpenAI(
     api_key=api_key,
-    base_url=GEMINI_BASE_URL
+    base_url=url
 )
 
 
